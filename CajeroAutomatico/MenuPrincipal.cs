@@ -7,8 +7,8 @@ namespace CajeroAutomatico
     class MenuPrincipal
     {
         MenuDispensacion menuDispensacion = new MenuDispensacion();
-        Dispensaciones dispensaciones = new Dispensaciones();
 
+        RetirarDinero retirarDinero = new RetirarDinero();
         enum Opciones
         {
            DISPENSACION =1,
@@ -19,6 +19,7 @@ namespace CajeroAutomatico
         public void ImprimirMenu() 
 
         {
+            Console.Clear();
             Console.WriteLine("Bienvenido al cajero automatico");
             Console.WriteLine("Seleciona una de las opcines siguientes. \n1-Modo dispensacion \n2-Retirar dinero");
             int opcion = Convert.ToInt32 (Console.ReadLine());
@@ -32,7 +33,7 @@ namespace CajeroAutomatico
                         break;
 
                     case (int)Opciones.RETIRAR_DINERO:
-                        dispensaciones.Eficiente();
+                        retirarDinero.Retiro();
                         break;
 
                     

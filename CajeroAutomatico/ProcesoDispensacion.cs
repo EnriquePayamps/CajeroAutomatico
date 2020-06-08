@@ -34,6 +34,7 @@ namespace CajeroAutomatico
             }
 
             Console.WriteLine($"Los sentimos solo trabajamos con numeros enteros");
+            
         }
 
         public int ConseguirCambioPorBillete(int billete, ref int cantidad)
